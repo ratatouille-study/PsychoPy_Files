@@ -69,7 +69,7 @@
         <Param name="name" updates="None" val="image" valType="code"/>
         <Param name="opacity" updates="constant" val="" valType="num"/>
         <Param name="ori" updates="constant" val="0" valType="num"/>
-        <Param name="pos" updates="constant" val="(0, 0.26)" valType="list"/>
+        <Param name="pos" updates="constant" val="(0, 0.20)" valType="list"/>
         <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
         <Param name="size" updates="constant" val="" valType="list"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
@@ -90,11 +90,11 @@
         <Param name="flip" updates="constant" val="None" valType="str"/>
         <Param name="font" updates="constant" val="Open Sans" valType="str"/>
         <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
-        <Param name="letterHeight" updates="constant" val="0.045" valType="num"/>
+        <Param name="letterHeight" updates="constant" val="0.030" valType="num"/>
         <Param name="name" updates="None" val="FamQ" valType="code"/>
         <Param name="opacity" updates="constant" val="" valType="num"/>
         <Param name="ori" updates="constant" val="0" valType="num"/>
-        <Param name="pos" updates="constant" val="(-0.50, -0.025)" valType="list"/>
+        <Param name="pos" updates="constant" val="(-0.50, -0.15)" valType="list"/>
         <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
@@ -120,14 +120,14 @@
         <Param name="granularity" updates="constant" val="0" valType="num"/>
         <Param name="initVal" updates="None" val="" valType="code"/>
         <Param name="labels" updates="constant" val="(&quot;Not at all&quot;, &quot;Extremely&quot;)" valType="list"/>
-        <Param name="letterHeight" updates="constant" val="0.035" valType="num"/>
+        <Param name="letterHeight" updates="constant" val="0.025" valType="num"/>
         <Param name="name" updates="None" val="FamSlider" valType="code"/>
         <Param name="opacity" updates="constant" val="" valType="num"/>
         <Param name="ori" updates="constant" val="0" valType="num"/>
-        <Param name="pos" updates="constant" val="(0.5, -0.025)" valType="list"/>
+        <Param name="pos" updates="constant" val="(0.5, -0.15)" valType="list"/>
         <Param name="readOnly" updates="constant" val="False" valType="bool"/>
         <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
-        <Param name="size" updates="constant" val="(0.6, 0.06)" valType="list"/>
+        <Param name="size" updates="constant" val="(0.4, 0.04)" valType="list"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
         <Param name="startVal" updates="None" val="0.0" valType="code"/>
@@ -151,11 +151,11 @@
         <Param name="flip" updates="constant" val="None" valType="str"/>
         <Param name="font" updates="constant" val="Open Sans" valType="str"/>
         <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
-        <Param name="letterHeight" updates="constant" val="0.045" valType="num"/>
+        <Param name="letterHeight" updates="constant" val="0.030" valType="num"/>
         <Param name="name" updates="None" val="ComfQ" valType="code"/>
         <Param name="opacity" updates="constant" val="" valType="num"/>
         <Param name="ori" updates="constant" val="0" valType="num"/>
-        <Param name="pos" updates="constant" val="(-0.40, -0.24)" valType="list"/>
+        <Param name="pos" updates="constant" val="(-0.40, -0.28)" valType="list"/>
         <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
@@ -181,14 +181,14 @@
         <Param name="granularity" updates="constant" val="0" valType="num"/>
         <Param name="initVal" updates="None" val="" valType="code"/>
         <Param name="labels" updates="constant" val="(&quot;Not at all&quot;, &quot;Extremely&quot;)" valType="list"/>
-        <Param name="letterHeight" updates="constant" val="0.035" valType="num"/>
+        <Param name="letterHeight" updates="constant" val="0.025" valType="num"/>
         <Param name="name" updates="None" val="ComfSlider" valType="code"/>
         <Param name="opacity" updates="constant" val="" valType="num"/>
         <Param name="ori" updates="constant" val="0" valType="num"/>
-        <Param name="pos" updates="constant" val="(0.5, -0.22)" valType="list"/>
+        <Param name="pos" updates="constant" val="(0.5, -0.28)" valType="list"/>
         <Param name="readOnly" updates="constant" val="False" valType="bool"/>
         <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
-        <Param name="size" updates="constant" val="(0.6,0.06)" valType="list"/>
+        <Param name="size" updates="constant" val="(0.4,0.04)" valType="list"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
         <Param name="startVal" updates="None" val="0.0" valType="code"/>
@@ -212,11 +212,11 @@
         <Param name="flip" updates="constant" val="None" valType="str"/>
         <Param name="font" updates="constant" val="Open Sans" valType="str"/>
         <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
-        <Param name="letterHeight" updates="constant" val="0.045" valType="num"/>
+        <Param name="letterHeight" updates="constant" val="0.030" valType="num"/>
         <Param name="name" updates="None" val="NosQ" valType="code"/>
         <Param name="opacity" updates="constant" val="" valType="num"/>
         <Param name="ori" updates="constant" val="0" valType="num"/>
-        <Param name="pos" updates="constant" val="(-0.39, -0.4)" valType="list"/>
+        <Param name="pos" updates="constant" val="(-0.425, -0.4)" valType="list"/>
         <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
@@ -242,14 +242,14 @@
         <Param name="granularity" updates="constant" val="0" valType="num"/>
         <Param name="initVal" updates="None" val="" valType="code"/>
         <Param name="labels" updates="constant" val="(&quot;Not at all&quot;, &quot;Extremely&quot;)" valType="list"/>
-        <Param name="letterHeight" updates="constant" val="0.035" valType="num"/>
+        <Param name="letterHeight" updates="constant" val="0.025" valType="num"/>
         <Param name="name" updates="None" val="NosSlider" valType="code"/>
         <Param name="opacity" updates="constant" val="" valType="num"/>
         <Param name="ori" updates="constant" val="0" valType="num"/>
         <Param name="pos" updates="constant" val="(0.5, -0.4)" valType="list"/>
         <Param name="readOnly" updates="constant" val="False" valType="bool"/>
         <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
-        <Param name="size" updates="constant" val="(0.6,0.06)" valType="list"/>
+        <Param name="size" updates="constant" val="(0.4, 0.04)" valType="list"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
         <Param name="startVal" updates="None" val="0.0" valType="code"/>
@@ -264,51 +264,6 @@
         <Param name="ticks" updates="constant" val="(1, 2, 3, 4, 5, 6, 7)" valType="list"/>
         <Param name="units" updates="None" val="from exp settings" valType="str"/>
       </SliderComponent>
-    </Routine>
-    <Routine name="Introduction">
-      <TextComponent name="intro">
-        <Param name="color" updates="constant" val="white" valType="color"/>
-        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
-        <Param name="contrast" updates="constant" val="1" valType="num"/>
-        <Param name="disabled" updates="None" val="False" valType="bool"/>
-        <Param name="durationEstim" updates="None" val="" valType="code"/>
-        <Param name="flip" updates="constant" val="None" valType="str"/>
-        <Param name="font" updates="constant" val="Open Sans" valType="str"/>
-        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
-        <Param name="letterHeight" updates="constant" val="0.035" valType="num"/>
-        <Param name="name" updates="None" val="intro" valType="code"/>
-        <Param name="opacity" updates="constant" val="" valType="num"/>
-        <Param name="ori" updates="constant" val="0" valType="num"/>
-        <Param name="pos" updates="constant" val="(0, 0)" valType="list"/>
-        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
-        <Param name="startEstim" updates="None" val="" valType="code"/>
-        <Param name="startType" updates="None" val="time (s)" valType="str"/>
-        <Param name="startVal" updates="None" val="0.0" valType="code"/>
-        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
-        <Param name="stopVal" updates="constant" val="" valType="code"/>
-        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
-        <Param name="text" updates="constant" val="Welcome to The Ratatouille Moment. The purpose of this study is to explore the effect of foods on emotions and homeostasis.&amp;#10;&amp;#10;You will be rating each food image on a set of 3 questions on a scale of 1-7. The goal is to assess the emotional value of each food item for you. Rating the foods is time sensitive, so please be attentive to the screen. There will be a 15 second break every so often.&amp;#10;&amp;#10;Press [Space] to start." valType="str"/>
-        <Param name="units" updates="None" val="from exp settings" valType="str"/>
-        <Param name="wrapWidth" updates="constant" val="" valType="num"/>
-      </TextComponent>
-      <KeyboardComponent name="key_resp">
-        <Param name="allowedKeys" updates="constant" val="'space'" valType="list"/>
-        <Param name="correctAns" updates="constant" val="" valType="str"/>
-        <Param name="disabled" updates="None" val="False" valType="bool"/>
-        <Param name="discard previous" updates="constant" val="True" valType="bool"/>
-        <Param name="durationEstim" updates="None" val="" valType="code"/>
-        <Param name="forceEndRoutine" updates="constant" val="True" valType="bool"/>
-        <Param name="name" updates="None" val="key_resp" valType="code"/>
-        <Param name="saveStartStop" updates="None" val="False" valType="bool"/>
-        <Param name="startEstim" updates="None" val="" valType="code"/>
-        <Param name="startType" updates="None" val="time (s)" valType="str"/>
-        <Param name="startVal" updates="None" val="0.0" valType="code"/>
-        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
-        <Param name="stopVal" updates="constant" val="" valType="code"/>
-        <Param name="store" updates="constant" val="nothing" valType="str"/>
-        <Param name="storeCorrect" updates="constant" val="False" valType="bool"/>
-        <Param name="syncScreenRefresh" updates="constant" val="True" valType="bool"/>
-      </KeyboardComponent>
     </Routine>
     <Routine name="Crosshair">
       <TextComponent name="text">
@@ -337,9 +292,160 @@
         <Param name="wrapWidth" updates="constant" val="" valType="num"/>
       </TextComponent>
     </Routine>
+    <Routine name="Intro2">
+      <TextComponent name="text_2">
+        <Param name="color" updates="constant" val="white" valType="color"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="contrast" updates="constant" val="1" valType="num"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flip" updates="constant" val="None" valType="str"/>
+        <Param name="font" updates="constant" val="Open Sans" valType="str"/>
+        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.035" valType="num"/>
+        <Param name="name" updates="None" val="text_2" valType="code"/>
+        <Param name="opacity" updates="constant" val="" valType="num"/>
+        <Param name="ori" updates="constant" val="0" valType="num"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="list"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="text" updates="constant" val="Rating the foods is time sensitive, so please be attentive to the screen. There will be a 15 second break every so often.&amp;#10;&amp;#10;To answer the question, please click on the position on the slider that you would like to select.&amp;#10;&amp;#10;Let's practice the task with some demo images. &amp;#10;Press [Space] to start.&amp;#10;" valType="str"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="num"/>
+      </TextComponent>
+      <KeyboardComponent name="key_resp_2">
+        <Param name="allowedKeys" updates="constant" val="'space'" valType="list"/>
+        <Param name="correctAns" updates="constant" val="" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="discard previous" updates="constant" val="True" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="forceEndRoutine" updates="constant" val="True" valType="bool"/>
+        <Param name="name" updates="None" val="key_resp_2" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="store" updates="constant" val="last key" valType="str"/>
+        <Param name="storeCorrect" updates="constant" val="False" valType="bool"/>
+        <Param name="syncScreenRefresh" updates="constant" val="True" valType="bool"/>
+      </KeyboardComponent>
+    </Routine>
+    <Routine name="Intro1">
+      <TextComponent name="intro_1">
+        <Param name="color" updates="constant" val="white" valType="color"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="contrast" updates="constant" val="1" valType="num"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flip" updates="constant" val="None" valType="str"/>
+        <Param name="font" updates="constant" val="Open Sans" valType="str"/>
+        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.035" valType="num"/>
+        <Param name="name" updates="None" val="intro_1" valType="code"/>
+        <Param name="opacity" updates="constant" val="" valType="num"/>
+        <Param name="ori" updates="constant" val="0" valType="num"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="list"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="text" updates="constant" val="Welcome to The Ratatouille Moment. The purpose of this study is to explore the effect of foods on emotions and homeostasis.&amp;#10;&amp;#10;You will be rating each food image on a set of 3 questions on a scale of 1-7. The goal is to assess the emotional value of each food item for you. &amp;#10;&amp;#10;&amp;#10;Press [Space] to continue." valType="str"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="num"/>
+      </TextComponent>
+      <KeyboardComponent name="key_resp">
+        <Param name="allowedKeys" updates="constant" val="'space'" valType="list"/>
+        <Param name="correctAns" updates="constant" val="" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="discard previous" updates="constant" val="True" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="forceEndRoutine" updates="constant" val="True" valType="bool"/>
+        <Param name="name" updates="None" val="key_resp" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="False" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="store" updates="constant" val="nothing" valType="str"/>
+        <Param name="storeCorrect" updates="constant" val="False" valType="bool"/>
+        <Param name="syncScreenRefresh" updates="constant" val="True" valType="bool"/>
+      </KeyboardComponent>
+    </Routine>
+    <Routine name="demo_trial"/>
+    <Routine name="Start">
+      <TextComponent name="text_3">
+        <Param name="color" updates="constant" val="white" valType="color"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="contrast" updates="constant" val="1" valType="num"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flip" updates="constant" val="None" valType="str"/>
+        <Param name="font" updates="constant" val="Open Sans" valType="str"/>
+        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.035" valType="num"/>
+        <Param name="name" updates="None" val="text_3" valType="code"/>
+        <Param name="opacity" updates="constant" val="" valType="num"/>
+        <Param name="ori" updates="constant" val="0" valType="num"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="list"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="text" updates="constant" val="Congratulations, you have completed the practice. &amp;#10;&amp;#10;To begin the experiment, press [Space]." valType="str"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="num"/>
+      </TextComponent>
+      <KeyboardComponent name="key_resp_3">
+        <Param name="allowedKeys" updates="constant" val="'space'" valType="list"/>
+        <Param name="correctAns" updates="constant" val="" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="discard previous" updates="constant" val="True" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="forceEndRoutine" updates="constant" val="True" valType="bool"/>
+        <Param name="name" updates="None" val="key_resp_3" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="store" updates="constant" val="last key" valType="str"/>
+        <Param name="storeCorrect" updates="constant" val="False" valType="bool"/>
+        <Param name="syncScreenRefresh" updates="constant" val="True" valType="bool"/>
+      </KeyboardComponent>
+    </Routine>
   </Routines>
   <Flow>
-    <Routine name="Introduction"/>
+    <Routine name="Intro1"/>
+    <Routine name="Intro2"/>
+    <LoopInitiator loopType="TrialHandler" name="demo_trials">
+      <Param name="Selected rows" updates="None" val="0:3" valType="str"/>
+      <Param name="conditions" updates="None" val="[{'DemoImageFile': 'images/Caucasian/baconEggCheese.jpg', 'ImageName': 'baconEggCheese.jpg', 'FoodType': 'DEMO'}, {'DemoImageFile': 'images/Caucasian/bagel.jpg', 'ImageName': 'bagel.jpg', 'FoodType': 'DEMO'}, {'DemoImageFile': 'images/Caucasian/balogneSandwhich.jpg', 'ImageName': 'balogneSandwhich.jpg', 'FoodType': 'DEMO'}, {'DemoImageFile': 'images/Caucasian/barbequeChickenCorn.jpg', 'ImageName': 'barbequeChickenCorn.jpg', 'FoodType': 'DEMO'}, {'DemoImageFile': 'images/Caucasian/beefJerky.jpg', 'ImageName': 'beefJerky.jpg', 'FoodType': 'DEMO'}]" valType="str"/>
+      <Param name="conditionsFile" updates="None" val="demoImageList.xlsx" valType="file"/>
+      <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
+      <Param name="isTrials" updates="None" val="True" valType="bool"/>
+      <Param name="loopType" updates="None" val="random" valType="str"/>
+      <Param name="nReps" updates="None" val="1" valType="num"/>
+      <Param name="name" updates="None" val="demo_trials" valType="code"/>
+      <Param name="random seed" updates="None" val="" valType="code"/>
+    </LoopInitiator>
+    <Routine name="trial"/>
+    <LoopTerminator name="demo_trials"/>
+    <Routine name="Start"/>
     <LoopInitiator loopType="TrialHandler" name="trials">
       <Param name="Selected rows" updates="None" val="0:221" valType="str"/>
       <Param name="conditions" updates="None" val="[{'ImageFile': 'images/coleslow3.jpg'}, {'ImageFile': 'images/gyro.jpg'}, {'ImageFile': 'images/porkchopdinner.jpg'}]" valType="str"/>
