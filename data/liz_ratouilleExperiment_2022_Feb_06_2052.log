@@ -1,0 +1,141 @@
+2.0850 	WARNING 	We strongly recommend you activate the PTB sound engine in PsychoPy prefs as the preferred audio engine. Its timing is vastly superior. Your prefs are currently set to use ['sounddevice', 'PTB', 'pyo', 'pygame'] (in that order).
+35.6710 	ERROR 	'-1.0000, -1.0000, -1.0000' is not a valid rgb color
+35.6811 	WARNING 	User requested fullscreen with size [1280  720], but screen is actually [1920, 1080]. Using actual size
+37.5570 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=False, autoLog=True, backendConf=UNKNOWN, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([0, 0, 0]), colorSpace='rgb', depthBits=8, fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x0000017354B5BD68>, gamma=None, gammaErrorPolicy='raise', lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x0000017354B43240>, multiSample=False, name='window1', numSamples=2, pos=[0.0, 0.0], screen=0, size=array([1920, 1080]), stencilBits=0, stereo=False, units='height', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+37.5577 	EXP 	window1: mouseVisible = True
+37.5578 	EXP 	window1: recordFrameIntervals = False
+37.7220 	EXP 	window1: recordFrameIntervals = True
+37.9065 	EXP 	window1: recordFrameIntervals = False
+38.3731 	EXP 	Created intro_1 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.035, italic=False, languageStyle='LTR', name='intro_1', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+38.3932 	EXP 	Created text_2 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.035, italic=False, languageStyle='LTR', name='text_2', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+38.4066 	EXP 	Created image = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='image', opacity=1, ori=0.0, pos=array([0.  , 0.26]), size=array([0.5, 0.5]), texRes=128.0, units='height', win=Window(...))
+38.4145 	EXP 	Created FamQ = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.035, italic=False, languageStyle='LTR', name='FamQ', opacity=1, ori=0.0, pos=array([-0.5  , -0.025]), rgb=UNKNOWN, text='How familiar is this food item to you?', units='height', win=Window(...), wrapWidth=1)
+38.4272 	EXP 	window1: mouseVisible = True
+38.4567 	EXP 	Created FamSlider = Slider(__class__=<class 'psychopy.visual.slider.Slider'>, autoDraw=False, autoLog=True, borderColor=None, color=None, colorSpace='rgb', depth=-2, fillColor=None, flip=False, font='Open Sans', granularity=0.0, labelHeight=0.03, labelWrapWidth=None, labels=('Not at all', 'Extremely'), name='FamSlider', opacity=None, pos=(0.5, -0.025), readOnly=False, self=UNKNOWN, size=(0.5, 0.05), startValue=None, style=method-wrapper(...), styleTweaks=method-wrapper(...), ticks=array([1, 2, 3, 4, 5, 6, 7]), units='height', win=Window(...))
+38.4698 	EXP 	Created ComfQ = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-3.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.035, italic=False, languageStyle='LTR', name='ComfQ', opacity=1, ori=0.0, pos=array([-0.4 , -0.24]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+38.4780 	EXP 	window1: mouseVisible = True
+38.4928 	EXP 	Created ComfSlider = Slider(__class__=<class 'psychopy.visual.slider.Slider'>, autoDraw=False, autoLog=True, borderColor=None, color=None, colorSpace='rgb', depth=-4, fillColor=None, flip=False, font='Open Sans', granularity=0.0, labelHeight=0.03, labelWrapWidth=None, labels=('Not at all', 'Extremely'), name='ComfSlider', opacity=None, pos=(0.5, -0.22), readOnly=False, self=UNKNOWN, size=(0.5, 0.05), startValue=None, style=method-wrapper(...), styleTweaks=method-wrapper(...), ticks=array([1, 2, 3, 4, 5, 6, 7]), units='height', win=Window(...))
+38.5025 	EXP 	Created NosQ = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-5.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.035, italic=False, languageStyle='LTR', name='NosQ', opacity=1, ori=0.0, pos=array([-0.39, -0.4 ]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+38.5099 	EXP 	window1: mouseVisible = True
+38.5253 	EXP 	Created NosSlider = Slider(__class__=<class 'psychopy.visual.slider.Slider'>, autoDraw=False, autoLog=True, borderColor=None, color=None, colorSpace='rgb', depth=-6, fillColor=None, flip=False, font='Open Sans', granularity=0.0, labelHeight=0.03, labelWrapWidth=None, labels=('Not at all', 'Extremely'), name='NosSlider', opacity=None, pos=(0.5, -0.4), readOnly=False, self=UNKNOWN, size=(0.5, 0.05), startValue=None, style=method-wrapper(...), styleTweaks=method-wrapper(...), ticks=array([1, 2, 3, 4, 5, 6, 7]), units='height', win=Window(...))
+38.5388 	EXP 	Created text_3 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.035, italic=False, languageStyle='LTR', name='text_3', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+38.5481 	EXP 	Created text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='text', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='+', units='height', win=Window(...), wrapWidth=1)
+38.5520 	EXP 	Created image = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='image', opacity=1, ori=0.0, pos=array([0.  , 0.26]), size=array([0.5, 0.5]), texRes=128.0, units='height', win=Window(...))
+38.5670 	EXP 	Created FamQ = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.035, italic=False, languageStyle='LTR', name='FamQ', opacity=1, ori=0.0, pos=array([-0.5  , -0.025]), rgb=UNKNOWN, text='How familiar is this food item to you?', units='height', win=Window(...), wrapWidth=1)
+38.5758 	EXP 	window1: mouseVisible = True
+38.5977 	EXP 	Created FamSlider = Slider(__class__=<class 'psychopy.visual.slider.Slider'>, autoDraw=False, autoLog=True, borderColor=None, color=None, colorSpace='rgb', depth=-2, fillColor=None, flip=False, font='Open Sans', granularity=0.0, labelHeight=0.03, labelWrapWidth=None, labels=('Not at all', 'Extremely'), name='FamSlider', opacity=None, pos=(0.5, -0.025), readOnly=False, self=UNKNOWN, size=(0.5, 0.05), startValue=None, style=method-wrapper(...), styleTweaks=method-wrapper(...), ticks=array([1, 2, 3, 4, 5, 6, 7]), units='height', win=Window(...))
+38.6116 	EXP 	Created ComfQ = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-3.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.035, italic=False, languageStyle='LTR', name='ComfQ', opacity=1, ori=0.0, pos=array([-0.4 , -0.24]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+38.6206 	EXP 	window1: mouseVisible = True
+38.6362 	EXP 	Created ComfSlider = Slider(__class__=<class 'psychopy.visual.slider.Slider'>, autoDraw=False, autoLog=True, borderColor=None, color=None, colorSpace='rgb', depth=-4, fillColor=None, flip=False, font='Open Sans', granularity=0.0, labelHeight=0.03, labelWrapWidth=None, labels=('Not at all', 'Extremely'), name='ComfSlider', opacity=None, pos=(0.5, -0.22), readOnly=False, self=UNKNOWN, size=(0.5, 0.05), startValue=None, style=method-wrapper(...), styleTweaks=method-wrapper(...), ticks=array([1, 2, 3, 4, 5, 6, 7]), units='height', win=Window(...))
+38.6484 	EXP 	Created NosQ = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-5.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.035, italic=False, languageStyle='LTR', name='NosQ', opacity=1, ori=0.0, pos=array([-0.39, -0.4 ]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+38.6560 	EXP 	window1: mouseVisible = True
+38.6699 	EXP 	Created NosSlider = Slider(__class__=<class 'psychopy.visual.slider.Slider'>, autoDraw=False, autoLog=True, borderColor=None, color=None, colorSpace='rgb', depth=-6, fillColor=None, flip=False, font='Open Sans', granularity=0.0, labelHeight=0.03, labelWrapWidth=None, labels=('Not at all', 'Extremely'), name='NosSlider', opacity=None, pos=(0.5, -0.4), readOnly=False, self=UNKNOWN, size=(0.5, 0.05), startValue=None, style=method-wrapper(...), styleTweaks=method-wrapper(...), ticks=array([1, 2, 3, 4, 5, 6, 7]), units='height', win=Window(...))
+38.7091 	EXP 	FamSlider: autoLog = True
+38.7091 	EXP 	FamSlider: markerPos = None
+38.7091 	EXP 	FamSlider: rating = None
+38.7091 	EXP 	FamSlider: markerPos = None
+38.7091 	EXP 	FamSlider: contrast = 1.0
+38.7091 	EXP 	FamSlider: autoLog = True
+38.7091 	EXP 	FamSlider: styleTweaks = []
+38.7091 	EXP 	FamSlider: style = 'rating'
+38.7091 	EXP 	FamSlider: styleTweaks = []
+38.7091 	EXP 	ComfSlider: autoLog = True
+38.7091 	EXP 	ComfSlider: markerPos = None
+38.7091 	EXP 	ComfSlider: rating = None
+38.7091 	EXP 	ComfSlider: markerPos = None
+38.7091 	EXP 	ComfSlider: contrast = 1.0
+38.7091 	EXP 	ComfSlider: autoLog = True
+38.7091 	EXP 	ComfSlider: styleTweaks = []
+38.7091 	EXP 	ComfSlider: style = 'rating'
+38.7091 	EXP 	ComfSlider: styleTweaks = []
+38.7091 	EXP 	NosSlider: autoLog = True
+38.7091 	EXP 	NosSlider: markerPos = None
+38.7091 	EXP 	NosSlider: rating = None
+38.7091 	EXP 	NosSlider: markerPos = None
+38.7091 	EXP 	NosSlider: contrast = 1.0
+38.7091 	EXP 	NosSlider: autoLog = True
+38.7091 	EXP 	NosSlider: styleTweaks = []
+38.7091 	EXP 	NosSlider: style = 'rating'
+38.7091 	EXP 	NosSlider: styleTweaks = []
+38.7091 	EXP 	FamSlider: autoLog = True
+38.7091 	EXP 	FamSlider: markerPos = None
+38.7091 	EXP 	FamSlider: rating = None
+38.7091 	EXP 	FamSlider: markerPos = None
+38.7091 	EXP 	FamSlider: contrast = 1.0
+38.7091 	EXP 	FamSlider: autoLog = True
+38.7091 	EXP 	FamSlider: styleTweaks = []
+38.7091 	EXP 	FamSlider: style = 'rating'
+38.7091 	EXP 	FamSlider: styleTweaks = []
+38.7091 	EXP 	ComfSlider: autoLog = True
+38.7091 	EXP 	ComfSlider: markerPos = None
+38.7091 	EXP 	ComfSlider: rating = None
+38.7091 	EXP 	ComfSlider: markerPos = None
+38.7091 	EXP 	ComfSlider: contrast = 1.0
+38.7091 	EXP 	ComfSlider: autoLog = True
+38.7091 	EXP 	ComfSlider: styleTweaks = []
+38.7091 	EXP 	ComfSlider: style = 'rating'
+38.7091 	EXP 	ComfSlider: styleTweaks = []
+38.7091 	EXP 	NosSlider: autoLog = True
+38.7091 	EXP 	NosSlider: markerPos = None
+38.7091 	EXP 	NosSlider: rating = None
+38.7091 	EXP 	NosSlider: markerPos = None
+38.7091 	EXP 	NosSlider: contrast = 1.0
+38.7091 	EXP 	NosSlider: autoLog = True
+38.7091 	EXP 	NosSlider: styleTweaks = []
+38.7091 	EXP 	NosSlider: style = 'rating'
+38.7091 	EXP 	NosSlider: styleTweaks = []
+38.7091 	EXP 	intro_1: autoDraw = True
+98.9064 	DATA 	Keypress: space
+98.9314 	EXP 	intro_1: autoDraw = False
+98.9314 	EXP 	text_2: autoDraw = True
+100.5888 	EXP 	Imported demoImageList.xlsx as conditions, 4 conditions, 3 params
+100.5900 	EXP 	Created sequence: random, trialTypes=4, nReps=1, seed=None
+100.5907 	EXP 	New trial (rep=0, index=0): {'ImageFile': 'images/Caucasian/bagel.jpg', 'ImageName': 'bagel.jpg', 'FoodType': 'DEMO'}
+100.6773 	DATA 	Keypress: space
+100.7003 	EXP 	text_2: autoDraw = False
+100.7003 	EXP 	image: size = array([0.46296296, 0.46296296])
+100.7003 	EXP 	image: image = 'images/Caucasian/bagel.jpg'
+100.7003 	EXP 	FamSlider: markerPos = None
+100.7003 	EXP 	FamSlider: markerPos = None
+100.7003 	EXP 	FamSlider: rating = None
+100.7003 	EXP 	ComfSlider: markerPos = None
+100.7003 	EXP 	ComfSlider: markerPos = None
+100.7003 	EXP 	ComfSlider: rating = None
+100.7003 	EXP 	NosSlider: markerPos = None
+100.7003 	EXP 	NosSlider: markerPos = None
+100.7003 	EXP 	NosSlider: rating = None
+100.7003 	EXP 	image: autoDraw = True
+100.7003 	EXP 	FamQ: autoDraw = True
+100.7003 	EXP 	FamSlider: autoDraw = True
+100.7003 	EXP 	ComfQ: autoDraw = True
+100.7003 	EXP 	ComfSlider: autoDraw = True
+100.7003 	EXP 	NosQ: autoDraw = True
+100.7003 	EXP 	NosSlider: autoDraw = True
+108.6026 	EXP 	New trial (rep=0, index=1): {'ImageFile': 'images/Caucasian/balogneSandwhich.jpg', 'ImageName': 'balogneSandwhich.jpg', 'FoodType': 'DEMO'}
+108.6841 	EXP 	image: autoDraw = False
+108.6841 	EXP 	FamQ: autoDraw = False
+108.6841 	EXP 	FamSlider: autoDraw = False
+108.6841 	EXP 	ComfQ: autoDraw = False
+108.6841 	EXP 	ComfSlider: autoDraw = False
+108.6841 	EXP 	NosQ: autoDraw = False
+108.6841 	EXP 	NosSlider: autoDraw = False
+108.6841 	EXP 	image: size = array([0.46296296, 0.46296296])
+108.6841 	EXP 	image: image = 'images/Caucasian/balogneSandwhich.jpg'
+108.6841 	EXP 	FamSlider: markerPos = None
+108.6841 	EXP 	FamSlider: markerPos = None
+108.6841 	EXP 	FamSlider: rating = None
+108.6841 	EXP 	ComfSlider: markerPos = None
+108.6841 	EXP 	ComfSlider: markerPos = None
+108.6841 	EXP 	ComfSlider: rating = None
+108.6841 	EXP 	NosSlider: markerPos = None
+108.6841 	EXP 	NosSlider: markerPos = None
+108.6841 	EXP 	NosSlider: rating = None
+108.6841 	EXP 	image: autoDraw = True
+108.6841 	EXP 	FamQ: autoDraw = True
+108.6841 	EXP 	FamSlider: autoDraw = True
+108.6841 	EXP 	ComfQ: autoDraw = True
+108.6841 	EXP 	ComfSlider: autoDraw = True
+108.6841 	EXP 	NosQ: autoDraw = True
+108.6841 	EXP 	NosSlider: autoDraw = True
+112.6947 	DATA 	Keypress: escape
+113.0378 	EXP 	window1: mouseVisible = True
