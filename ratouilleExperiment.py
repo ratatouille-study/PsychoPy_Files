@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2021.2.3),
-    on February 06, 2022, at 21:19
+    on February 12, 2022, at 10:24
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -37,7 +37,7 @@ os.chdir(_thisDir)
 # Store info about the experiment session
 psychopyVersion = '2021.2.3'
 expName = 'ratouilleExperiment'  # from the Builder filename that created this script
-expInfo = {'participant': '', 'session': '', 'race':''}
+expInfo = {'participant': '', 'session': '', 'foodgroup': ''}
 dlg = gui.DlgFromDict(dictionary=expInfo, sortKeys=False, title=expName)
 if dlg.OK == False:
     core.quit()  # user pressed cancel
@@ -65,7 +65,7 @@ frameTolerance = 0.001  # how close to onset before 'same' frame
 
 # Setup the Window
 win = visual.Window(
-    size=[1920, 1080], fullscr=False, screen=0, 
+    size=[1280, 720], fullscr=True, screen=0, 
     winType='pyglet', allowGUI=False, allowStencil=False,
     monitor='testMonitor', color=(-1.0000, -1.0000, -1.0000), colorSpace='rgb',
     blendMode='avg', useFBO=True, 
@@ -97,13 +97,31 @@ key_resp = keyboard.Keyboard()
 # Initialize components for Routine "Intro2"
 Intro2Clock = core.Clock()
 text_2 = visual.TextStim(win=win, name='text_2',
-    text="Rating the foods is time sensitive, so please be attentive to the screen. There will be a 15 second break every so often.\n\nTo answer the question, please click on the position on the slider that you would like to select.\n\nLet's practice the task with some demo images. \nPress [Space] to start.\n",
+    text="Rating the foods is time sensitive, so please be attentive to the screen. There will be a 15 second break every so often. \nTo answer the question, please click on the position on the slider that you would like to select.\n\nLet's practice the task now. \n\n\nPress [Space] to start.\n",
     font='Open Sans',
     pos=(0, 0), height=0.035, wrapWidth=None, ori=0.0, 
     color='white', colorSpace='rgb', opacity=None, 
     languageStyle='LTR',
     depth=0.0);
 key_resp_2 = keyboard.Keyboard()
+
+# Initialize components for Routine "hungerscale"
+hungerscaleClock = core.Clock()
+slider = visual.Slider(win=win, name='slider',
+    startValue=None, size=(0.5, 0.05), pos=(0, -0.1), units=None,
+    labels=("Not at all", "Extremely"), ticks=(1, 2, 3, 4, 5, 6, 7, 8, 9, 10), granularity=0.0,
+    style='rating', styleTweaks=(), opacity=None,
+    color='White', fillColor='Red', borderColor='White', colorSpace='rgb',
+    font='Open Sans', labelHeight=0.03,
+    flip=False, depth=0, readOnly=False)
+
+text_4 = visual.TextStim(win=win, name='text_4',
+    text='How hungry do you feel now?',
+    font='Open Sans',
+    pos=(0, 0.1), height=0.04, wrapWidth=None, ori=0.0, 
+    color='white', colorSpace='rgb', opacity=None, 
+    languageStyle='LTR',
+    depth=-1.0);
 
 # Initialize components for Routine "trial"
 trialClock = core.Clock()
@@ -231,6 +249,23 @@ NosSlider = visual.Slider(win=win, name='NosSlider',
     color='White', fillColor='Red', borderColor='White', colorSpace='rgb',
     font='Open Sans', labelHeight=0.025,
     flip=False, depth=-6, readOnly=False)
+
+# Initialize components for Routine "hungerscale"
+hungerscaleClock = core.Clock()
+slider = visual.Slider(win=win, name='slider',
+    startValue=None, size=(0.5, 0.05), pos=(0, -0.1), units=None,
+    labels=("Not at all", "Extremely"), ticks=(1, 2, 3, 4, 5, 6, 7, 8, 9, 10), granularity=0.0,
+    style='rating', styleTweaks=(), opacity=None,
+    color='White', fillColor='Red', borderColor='White', colorSpace='rgb',
+    font='Open Sans', labelHeight=0.03,
+    flip=False, depth=0, readOnly=False)
+text_4 = visual.TextStim(win=win, name='text_4',
+    text='How hungry do you feel now?',
+    font='Open Sans',
+    pos=(0, 0.1), height=0.04, wrapWidth=None, ori=0.0, 
+    color='white', colorSpace='rgb', opacity=None, 
+    languageStyle='LTR',
+    depth=-1.0);
 
 # Create some handy timers
 globalClock = core.Clock()  # to track the time since experiment started
@@ -419,6 +454,96 @@ thisExp.nextEntry()
 # the Routine "Intro2" was not non-slip safe, so reset the non-slip timer
 routineTimer.reset()
 
+# ------Prepare to start Routine "hungerscale"-------
+continueRoutine = True
+
+#slider has no tick marks
+for i, line in enumerate(slider.tickLines.sizes):
+    #if i not in [0,9]:  # Where 0 and 10 are your first and last tick locations
+    #    slider.tickLines.sizes[i][1] = 0
+    slider.tickLines.sizes[i][1] = 0
+slider.tickLines._needVertexUpdate = True
+
+#adjust slider red marker
+slider.marker.size = (.03, .03)
+
+# update component parameters for each repeat
+slider.reset()
+# keep track of which components have finished
+hungerscaleComponents = [slider, text_4]
+for thisComponent in hungerscaleComponents:
+    thisComponent.tStart = None
+    thisComponent.tStop = None
+    thisComponent.tStartRefresh = None
+    thisComponent.tStopRefresh = None
+    if hasattr(thisComponent, 'status'):
+        thisComponent.status = NOT_STARTED
+# reset timers
+t = 0
+_timeToFirstFrame = win.getFutureFlipTime(clock="now")
+hungerscaleClock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
+frameN = -1
+
+# -------Run Routine "hungerscale"-------
+while continueRoutine:
+    # get current time
+    t = hungerscaleClock.getTime()
+    tThisFlip = win.getFutureFlipTime(clock=hungerscaleClock)
+    tThisFlipGlobal = win.getFutureFlipTime(clock=None)
+    frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
+    # update/draw components on each frame
+    
+    # *slider* updates
+    if slider.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+        # keep track of start time/frame for later
+        slider.frameNStart = frameN  # exact frame index
+        slider.tStart = t  # local t and not account for scr refresh
+        slider.tStartRefresh = tThisFlipGlobal  # on global time
+        win.timeOnFlip(slider, 'tStartRefresh')  # time at next scr refresh
+        slider.setAutoDraw(True)
+    
+    # Check slider for response to end routine
+    if slider.getRating() is not None and slider.status == STARTED:
+        continueRoutine = False
+    
+    # *text_4* updates
+    if text_4.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+        # keep track of start time/frame for later
+        text_4.frameNStart = frameN  # exact frame index
+        text_4.tStart = t  # local t and not account for scr refresh
+        text_4.tStartRefresh = tThisFlipGlobal  # on global time
+        win.timeOnFlip(text_4, 'tStartRefresh')  # time at next scr refresh
+        text_4.setAutoDraw(True)
+    
+    # check for quit (typically the Esc key)
+    if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
+        core.quit()
+    
+    # check if all components have finished
+    if not continueRoutine:  # a component has requested a forced-end of Routine
+        break
+    continueRoutine = False  # will revert to True if at least one component still running
+    for thisComponent in hungerscaleComponents:
+        if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
+            continueRoutine = True
+            break  # at least one component has not yet finished
+    
+    # refresh the screen
+    if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
+        win.flip()
+
+# -------Ending Routine "hungerscale"-------
+for thisComponent in hungerscaleComponents:
+    if hasattr(thisComponent, "setAutoDraw"):
+        thisComponent.setAutoDraw(False)
+thisExp.addData('slider.response', slider.getRating())
+thisExp.addData('slider.started', slider.tStartRefresh)
+thisExp.addData('slider.stopped', slider.tStopRefresh)
+thisExp.addData('text_4.started', text_4.tStartRefresh)
+thisExp.addData('text_4.stopped', text_4.tStopRefresh)
+# the Routine "hungerscale" was not non-slip safe, so reset the non-slip timer
+routineTimer.reset()
+
 # set up handler to look after randomisation of conditions etc
 demo_trials = data.TrialHandler(nReps=1.0, method='random', 
     extraInfo=expInfo, originPath=-1,
@@ -441,6 +566,12 @@ for thisDemo_trial in demo_trials:
     # ------Prepare to start Routine "trial"-------
     continueRoutine = True
     routineTimer.add(8.000000)
+    
+    #adjust slider red marker
+    FamSlider.marker.size = (.03, .03)
+    ComfSlider.marker.size = (.03, .03)
+    NosSlider.marker.size = (.03, .03)
+    
     # update component parameters for each repeat
     image.setImage(ImageFile)
     FamSlider.reset()
@@ -615,19 +746,16 @@ for thisDemo_trial in demo_trials:
     demo_trials.addData('FamQ.started', FamQ.tStartRefresh)
     demo_trials.addData('FamQ.stopped', FamQ.tStopRefresh)
     demo_trials.addData('FamSlider.response', FamSlider.getRating())
-    demo_trials.addData('FamSlider.rt', FamSlider.getRT())
     demo_trials.addData('FamSlider.started', FamSlider.tStartRefresh)
     demo_trials.addData('FamSlider.stopped', FamSlider.tStopRefresh)
     demo_trials.addData('ComfQ.started', ComfQ.tStartRefresh)
     demo_trials.addData('ComfQ.stopped', ComfQ.tStopRefresh)
     demo_trials.addData('ComfSlider.response', ComfSlider.getRating())
-    demo_trials.addData('ComfSlider.rt', ComfSlider.getRT())
     demo_trials.addData('ComfSlider.started', ComfSlider.tStartRefresh)
     demo_trials.addData('ComfSlider.stopped', ComfSlider.tStopRefresh)
     demo_trials.addData('NosQ.started', NosQ.tStartRefresh)
     demo_trials.addData('NosQ.stopped', NosQ.tStopRefresh)
     demo_trials.addData('NosSlider.response', NosSlider.getRating())
-    demo_trials.addData('NosSlider.rt', NosSlider.getRT())
     demo_trials.addData('NosSlider.started', NosSlider.tStartRefresh)
     demo_trials.addData('NosSlider.stopped', NosSlider.tStopRefresh)
     thisExp.nextEntry()
@@ -824,6 +952,7 @@ for thisTrial in trials:
     # ------Prepare to start Routine "trial"-------
     continueRoutine = True
     routineTimer.add(8.000000)
+    
     # update component parameters for each repeat
     image.setImage(ImageFile)
     FamSlider.reset()
@@ -998,25 +1127,101 @@ for thisTrial in trials:
     trials.addData('FamQ.started', FamQ.tStartRefresh)
     trials.addData('FamQ.stopped', FamQ.tStopRefresh)
     trials.addData('FamSlider.response', FamSlider.getRating())
-    trials.addData('FamSlider.rt', FamSlider.getRT())
     trials.addData('FamSlider.started', FamSlider.tStartRefresh)
     trials.addData('FamSlider.stopped', FamSlider.tStopRefresh)
     trials.addData('ComfQ.started', ComfQ.tStartRefresh)
     trials.addData('ComfQ.stopped', ComfQ.tStopRefresh)
     trials.addData('ComfSlider.response', ComfSlider.getRating())
-    trials.addData('ComfSlider.rt', ComfSlider.getRT())
     trials.addData('ComfSlider.started', ComfSlider.tStartRefresh)
     trials.addData('ComfSlider.stopped', ComfSlider.tStopRefresh)
     trials.addData('NosQ.started', NosQ.tStartRefresh)
     trials.addData('NosQ.stopped', NosQ.tStopRefresh)
     trials.addData('NosSlider.response', NosSlider.getRating())
-    trials.addData('NosSlider.rt', NosSlider.getRT())
     trials.addData('NosSlider.started', NosSlider.tStartRefresh)
     trials.addData('NosSlider.stopped', NosSlider.tStopRefresh)
     thisExp.nextEntry()
     
 # completed 1.0 repeats of 'trials'
 
+
+# ------Prepare to start Routine "hungerscale"-------
+continueRoutine = True
+# update component parameters for each repeat
+slider.reset()
+# keep track of which components have finished
+hungerscaleComponents = [slider, text_4]
+for thisComponent in hungerscaleComponents:
+    thisComponent.tStart = None
+    thisComponent.tStop = None
+    thisComponent.tStartRefresh = None
+    thisComponent.tStopRefresh = None
+    if hasattr(thisComponent, 'status'):
+        thisComponent.status = NOT_STARTED
+# reset timers
+t = 0
+_timeToFirstFrame = win.getFutureFlipTime(clock="now")
+hungerscaleClock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
+frameN = -1
+
+# -------Run Routine "hungerscale"-------
+while continueRoutine:
+    # get current time
+    t = hungerscaleClock.getTime()
+    tThisFlip = win.getFutureFlipTime(clock=hungerscaleClock)
+    tThisFlipGlobal = win.getFutureFlipTime(clock=None)
+    frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
+    # update/draw components on each frame
+    
+    # *slider* updates
+    if slider.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+        # keep track of start time/frame for later
+        slider.frameNStart = frameN  # exact frame index
+        slider.tStart = t  # local t and not account for scr refresh
+        slider.tStartRefresh = tThisFlipGlobal  # on global time
+        win.timeOnFlip(slider, 'tStartRefresh')  # time at next scr refresh
+        slider.setAutoDraw(True)
+    
+    # Check slider for response to end routine
+    if slider.getRating() is not None and slider.status == STARTED:
+        continueRoutine = False
+    
+    # *text_4* updates
+    if text_4.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+        # keep track of start time/frame for later
+        text_4.frameNStart = frameN  # exact frame index
+        text_4.tStart = t  # local t and not account for scr refresh
+        text_4.tStartRefresh = tThisFlipGlobal  # on global time
+        win.timeOnFlip(text_4, 'tStartRefresh')  # time at next scr refresh
+        text_4.setAutoDraw(True)
+    
+    # check for quit (typically the Esc key)
+    if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
+        core.quit()
+    
+    # check if all components have finished
+    if not continueRoutine:  # a component has requested a forced-end of Routine
+        break
+    continueRoutine = False  # will revert to True if at least one component still running
+    for thisComponent in hungerscaleComponents:
+        if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
+            continueRoutine = True
+            break  # at least one component has not yet finished
+    
+    # refresh the screen
+    if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
+        win.flip()
+
+# -------Ending Routine "hungerscale"-------
+for thisComponent in hungerscaleComponents:
+    if hasattr(thisComponent, "setAutoDraw"):
+        thisComponent.setAutoDraw(False)
+thisExp.addData('slider.response', slider.getRating())
+thisExp.addData('slider.started', slider.tStartRefresh)
+thisExp.addData('slider.stopped', slider.tStopRefresh)
+thisExp.addData('text_4.started', text_4.tStartRefresh)
+thisExp.addData('text_4.stopped', text_4.tStopRefresh)
+# the Routine "hungerscale" was not non-slip safe, so reset the non-slip timer
+routineTimer.reset()
 
 # Flip one final time so any remaining win.callOnFlip() 
 # and win.timeOnFlip() tasks get executed before quitting
