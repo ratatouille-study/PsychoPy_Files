@@ -37,8 +37,12 @@ os.chdir(_thisDir)
 # Store info about the experiment session
 psychopyVersion = '2021.2.3'
 expName = 'ratouilleExperiment'  # from the Builder filename that created this script
-expInfo = {'participant': '', 'session': '', 'foodgroup': ''}
+expInfo = {'participant': '', 'session': '', 'food group': ''}
 dlg = gui.DlgFromDict(dictionary=expInfo, sortKeys=False, title=expName)
+
+while '' in expInfo.values():
+    dlg = gui.DlgFromDict(dictionary=expInfo, sortKeys=False, title=expName)
+
 if dlg.OK == False:
     core.quit()  # user pressed cancel
 expInfo['date'] = data.getDateStr()  # add a simple timestamp
@@ -65,7 +69,7 @@ frameTolerance = 0.001  # how close to onset before 'same' frame
 
 # Setup the Window
 win = visual.Window(
-    size=[1280, 720], fullscr=True, screen=0, 
+    size=[1920, 1080], fullscr=False, screen=0, 
     winType='pyglet', allowGUI=False, allowStencil=False,
     monitor='testMonitor', color=(-1.0000, -1.0000, -1.0000), colorSpace='rgb',
     blendMode='avg', useFBO=True, 
@@ -86,7 +90,7 @@ defaultKeyboard = keyboard.Keyboard()
 # Initialize components for Routine "Intro1"
 Intro1Clock = core.Clock()
 intro_1 = visual.TextStim(win=win, name='intro_1',
-    text='Welcome to The Ratatouille Moment. The purpose of this study is to explore the effect of foods on emotions and homeostasis.\n\nYou will be rating each food image on a set of 3 questions on a scale of 1-7. The goal is to assess the emotional value of each food item for you. \n\n\nPress [Space] to continue.',
+    text='Welcome to The Ratatouille Moment. The purpose of this study is to explore the effect of foods on emotions and homeostasis.\n\nYou will be rating each food image on a set of 3 questions. The goal is to assess the emotional value of each food item for you. \n\n\nPress [Space] to continue.',
     font='Open Sans',
     pos=(0, 0), height=0.035, wrapWidth=None, ori=0.0, 
     color='white', colorSpace='rgb', opacity=None, 
@@ -97,7 +101,7 @@ key_resp = keyboard.Keyboard()
 # Initialize components for Routine "Intro2"
 Intro2Clock = core.Clock()
 text_2 = visual.TextStim(win=win, name='text_2',
-    text="Rating the foods is time sensitive, so please be attentive to the screen. There will be a 15 second break every so often. \nTo answer the question, please click on the position on the slider that you would like to select.\n\nLet's practice the task now. \n\n\nPress [Space] to start.\n",
+    text="Rating the foods is time sensitive, so please be attentive to the screen. There will be a 15 second break every so often. \nTo answer the question, please click on the position on the slider that you would like to select.\n\nBefore we practice the task, we have 1 more question to ask you.\n\n\nPress [Space] to proceed.\n",
     font='Open Sans',
     pos=(0, 0), height=0.035, wrapWidth=None, ori=0.0, 
     color='white', colorSpace='rgb', opacity=None, 
@@ -459,9 +463,8 @@ continueRoutine = True
 
 #slider has no tick marks
 for i, line in enumerate(slider.tickLines.sizes):
-    #if i not in [0,9]:  # Where 0 and 10 are your first and last tick locations
-    #    slider.tickLines.sizes[i][1] = 0
-    slider.tickLines.sizes[i][1] = 0
+    if i not in [0,9]:  # Where 0 and 10 are your first and last tick locations
+        slider.tickLines.sizes[i][1] = 0
 slider.tickLines._needVertexUpdate = True
 
 #adjust slider red marker
