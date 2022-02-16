@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2021.2.3),
-    on February 14, 2022, at 17:59
+    on February 14, 2022, at 19:35
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -43,7 +43,6 @@ dlg = gui.DlgFromDict(dictionary=expInfo, sortKeys=False, title=expName)
 while '' in expInfo.values():
     if dlg.OK == False:
         core.quit()  # user pressed cancel
-    
     dlg = gui.DlgFromDict(dictionary=expInfo, sortKeys=False, title=expName)
 
 if dlg.OK == False:
@@ -58,7 +57,7 @@ filename = _thisDir + os.sep + u'data/%s_%s_%s' % (expInfo['participant'], expNa
 # An ExperimentHandler isn't essential but helps with data saving
 thisExp = data.ExperimentHandler(name=expName, version='',
     extraInfo=expInfo, runtimeInfo=None,
-    originPath='C:\\Experiment\\ratouilleExperiment.py',
+    originPath='C:\\Users\\ACLab\\Desktop\\Ratatouille Study\\ratouilleExperiment.py',
     savePickle=True, saveWideText=True,
     dataFileName=filename)
 # save a log file for detail verbose info
@@ -159,7 +158,7 @@ FamQ = visual.TextStim(win=win, name='FamQ',
     depth=-1.0);
 FamSlider = visual.Slider(win=win, name='FamSlider',
     startValue=None, size=(0.4, 0.04), pos=(0.5, -0.15), units=None,
-    labels=("Not at all", "Extremely"), ticks=(1, 2, 3, 4, 5, 6, 7), granularity=0.0,
+    labels=("Not at all", "Extremely"), ticks=(1, 2, 3, 4, 5, 6, 7), granularity=1.0,
     style='rating', styleTweaks=(), opacity=None,
     color='White', fillColor='Red', borderColor='White', colorSpace='rgb',
     font='Open Sans', labelHeight=0.025,
@@ -173,7 +172,7 @@ ComfQ = visual.TextStim(win=win, name='ComfQ',
     depth=-3.0);
 ComfSlider = visual.Slider(win=win, name='ComfSlider',
     startValue=None, size=(0.4,0.04), pos=(0.5, -0.28), units=None,
-    labels=("Not at all", "Extremely"), ticks=(1, 2, 3, 4, 5, 6, 7), granularity=0.0,
+    labels=("Not at all", "Extremely"), ticks=(1, 2, 3, 4, 5, 6, 7), granularity=1.0,
     style='rating', styleTweaks=(), opacity=None,
     color='White', fillColor='Red', borderColor='White', colorSpace='rgb',
     font='Open Sans', labelHeight=0.025,
@@ -187,7 +186,7 @@ NosQ = visual.TextStim(win=win, name='NosQ',
     depth=-5.0);
 NosSlider = visual.Slider(win=win, name='NosSlider',
     startValue=None, size=(0.4, 0.04), pos=(0.5, -0.4), units=None,
-    labels=("Not at all", "Extremely"), ticks=(1, 2, 3, 4, 5, 6, 7), granularity=0.0,
+    labels=("Not at all", "Extremely"), ticks=(1, 2, 3, 4, 5, 6, 7), granularity=1.0,
     style='rating', styleTweaks=(), opacity=None,
     color='White', fillColor='Red', borderColor='White', colorSpace='rgb',
     font='Open Sans', labelHeight=0.025,
@@ -196,7 +195,7 @@ NosSlider = visual.Slider(win=win, name='NosSlider',
 # Initialize components for Routine "Start"
 StartClock = core.Clock()
 text_3 = visual.TextStim(win=win, name='text_3',
-    text='You have completed the practice. \n\nTo begin the experiment, press [Space].',
+    text='Congratulations, you have completed the practice. \n\nTo begin the experiment, press [Space].',
     font='Open Sans',
     pos=(0, 0), height=0.035, wrapWidth=None, ori=0.0, 
     color='white', colorSpace='rgb', opacity=None, 
@@ -233,7 +232,7 @@ FamQ = visual.TextStim(win=win, name='FamQ',
     depth=-1.0);
 FamSlider = visual.Slider(win=win, name='FamSlider',
     startValue=None, size=(0.4, 0.04), pos=(0.5, -0.15), units=None,
-    labels=("Not at all", "Extremely"), ticks=(1, 2, 3, 4, 5, 6, 7), granularity=0.0,
+    labels=("Not at all", "Extremely"), ticks=(1, 2, 3, 4, 5, 6, 7), granularity=1.0,
     style='rating', styleTweaks=(), opacity=None,
     color='White', fillColor='Red', borderColor='White', colorSpace='rgb',
     font='Open Sans', labelHeight=0.025,
@@ -247,7 +246,7 @@ ComfQ = visual.TextStim(win=win, name='ComfQ',
     depth=-3.0);
 ComfSlider = visual.Slider(win=win, name='ComfSlider',
     startValue=None, size=(0.4,0.04), pos=(0.5, -0.28), units=None,
-    labels=("Not at all", "Extremely"), ticks=(1, 2, 3, 4, 5, 6, 7), granularity=0.0,
+    labels=("Not at all", "Extremely"), ticks=(1, 2, 3, 4, 5, 6, 7), granularity=1.0,
     style='rating', styleTweaks=(), opacity=None,
     color='White', fillColor='Red', borderColor='White', colorSpace='rgb',
     font='Open Sans', labelHeight=0.025,
@@ -261,7 +260,7 @@ NosQ = visual.TextStim(win=win, name='NosQ',
     depth=-5.0);
 NosSlider = visual.Slider(win=win, name='NosSlider',
     startValue=None, size=(0.4, 0.04), pos=(0.5, -0.4), units=None,
-    labels=("Not at all", "Extremely"), ticks=(1, 2, 3, 4, 5, 6, 7), granularity=0.0,
+    labels=("Not at all", "Extremely"), ticks=(1, 2, 3, 4, 5, 6, 7), granularity=1.0,
     style='rating', styleTweaks=(), opacity=None,
     color='White', fillColor='Red', borderColor='White', colorSpace='rgb',
     font='Open Sans', labelHeight=0.025,
@@ -283,6 +282,17 @@ text_4 = visual.TextStim(win=win, name='text_4',
     color='white', colorSpace='rgb', opacity=None, 
     languageStyle='LTR',
     depth=-1.0);
+
+# Initialize components for Routine "end"
+endClock = core.Clock()
+text_6 = visual.TextStim(win=win, name='text_6',
+    text='Thank you for participating in this experiment. You will receive your SONA credits soon.\n\nPress [Space] to exit.',
+    font='Open Sans',
+    pos=(0, 0), height=0.035, wrapWidth=None, ori=0.0, 
+    color='white', colorSpace='rgb', opacity=None, 
+    languageStyle='LTR',
+    depth=0.0);
+key_resp_5 = keyboard.Keyboard()
 
 # Create some handy timers
 globalClock = core.Clock()  # to track the time since experiment started
@@ -678,23 +688,7 @@ for thisDemo_trial in demo_trials:
     
     # ------Prepare to start Routine "trial"-------
     continueRoutine = True
-    routineTimer.add(8.000000)
-    
-    #slider has no tick marks
-    for i, line in enumerate(FamSlider.tickLines.sizes):
-        if i not in [0,6]:  # Where 0 and 7 are your first and last tick locations
-            FamSlider.tickLines.sizes[i][1] = 0
-    FamSlider.tickLines._needVertexUpdate = True
-    
-    for i, line in enumerate(ComfSlider.tickLines.sizes):
-        if i not in [0,6]:  # Where 0 and 7 are your first and last tick locations
-            ComfSlider.tickLines.sizes[i][1] = 0
-    ComfSlider.tickLines._needVertexUpdate = True
-    
-    for i, line in enumerate(NosSlider.tickLines.sizes):
-        if i not in [0,6]:  # Where 0 and 7 are your first and last tick locations
-            NosSlider.tickLines.sizes[i][1] = 0
-    NosSlider.tickLines._needVertexUpdate = True
+    routineTimer.add(10.000000)
     
     #adjust slider red marker
     FamSlider.marker.size = (.03, .03)
@@ -706,6 +700,7 @@ for thisDemo_trial in demo_trials:
     FamSlider.reset()
     ComfSlider.reset()
     NosSlider.reset()
+    
     # keep track of which components have finished
     trialComponents = [image, FamQ, FamSlider, ComfQ, ComfSlider, NosQ, NosSlider]
     for thisComponent in trialComponents:
@@ -740,7 +735,7 @@ for thisDemo_trial in demo_trials:
             image.setAutoDraw(True)
         if image.status == STARTED:
             # is it time to stop? (based on global clock, using actual start)
-            if tThisFlipGlobal > image.tStartRefresh + 8-frameTolerance:
+            if tThisFlipGlobal > image.tStartRefresh + 10-frameTolerance:
                 # keep track of stop time/frame for later
                 image.tStop = t  # not accounting for scr refresh
                 image.frameNStop = frameN  # exact frame index
@@ -757,7 +752,7 @@ for thisDemo_trial in demo_trials:
             FamQ.setAutoDraw(True)
         if FamQ.status == STARTED:
             # is it time to stop? (based on global clock, using actual start)
-            if tThisFlipGlobal > FamQ.tStartRefresh + 8-frameTolerance:
+            if tThisFlipGlobal > FamQ.tStartRefresh + 10-frameTolerance:
                 # keep track of stop time/frame for later
                 FamQ.tStop = t  # not accounting for scr refresh
                 FamQ.frameNStop = frameN  # exact frame index
@@ -774,7 +769,7 @@ for thisDemo_trial in demo_trials:
             FamSlider.setAutoDraw(True)
         if FamSlider.status == STARTED:
             # is it time to stop? (based on global clock, using actual start)
-            if tThisFlipGlobal > FamSlider.tStartRefresh + 8-frameTolerance:
+            if tThisFlipGlobal > FamSlider.tStartRefresh + 10-frameTolerance:
                 # keep track of stop time/frame for later
                 FamSlider.tStop = t  # not accounting for scr refresh
                 FamSlider.frameNStop = frameN  # exact frame index
@@ -791,7 +786,7 @@ for thisDemo_trial in demo_trials:
             ComfQ.setAutoDraw(True)
         if ComfQ.status == STARTED:
             # is it time to stop? (based on global clock, using actual start)
-            if tThisFlipGlobal > ComfQ.tStartRefresh + 8-frameTolerance:
+            if tThisFlipGlobal > ComfQ.tStartRefresh + 10-frameTolerance:
                 # keep track of stop time/frame for later
                 ComfQ.tStop = t  # not accounting for scr refresh
                 ComfQ.frameNStop = frameN  # exact frame index
@@ -808,7 +803,7 @@ for thisDemo_trial in demo_trials:
             ComfSlider.setAutoDraw(True)
         if ComfSlider.status == STARTED:
             # is it time to stop? (based on global clock, using actual start)
-            if tThisFlipGlobal > ComfSlider.tStartRefresh + 8-frameTolerance:
+            if tThisFlipGlobal > ComfSlider.tStartRefresh + 10-frameTolerance:
                 # keep track of stop time/frame for later
                 ComfSlider.tStop = t  # not accounting for scr refresh
                 ComfSlider.frameNStop = frameN  # exact frame index
@@ -825,7 +820,7 @@ for thisDemo_trial in demo_trials:
             NosQ.setAutoDraw(True)
         if NosQ.status == STARTED:
             # is it time to stop? (based on global clock, using actual start)
-            if tThisFlipGlobal > NosQ.tStartRefresh + 8-frameTolerance:
+            if tThisFlipGlobal > NosQ.tStartRefresh + 10-frameTolerance:
                 # keep track of stop time/frame for later
                 NosQ.tStop = t  # not accounting for scr refresh
                 NosQ.frameNStop = frameN  # exact frame index
@@ -842,7 +837,7 @@ for thisDemo_trial in demo_trials:
             NosSlider.setAutoDraw(True)
         if NosSlider.status == STARTED:
             # is it time to stop? (based on global clock, using actual start)
-            if tThisFlipGlobal > NosSlider.tStartRefresh + 8-frameTolerance:
+            if tThisFlipGlobal > NosSlider.tStartRefresh + 10-frameTolerance:
                 # keep track of stop time/frame for later
                 NosSlider.tStop = t  # not accounting for scr refresh
                 NosSlider.frameNStop = frameN  # exact frame index
@@ -994,7 +989,7 @@ routineTimer.reset()
 # set up handler to look after randomisation of conditions etc
 trials = data.TrialHandler(nReps=1.0, method='random', 
     extraInfo=expInfo, originPath=-1,
-    trialList=data.importConditions('C:/Experiment/imageList.xlsx', selection='0:221'),
+    trialList=data.importConditions('C:\\Users\\ACLab\\Desktop\\Ratatouille Study\\imageList.xlsx', selection='0:5'),
     seed=None, name='trials')
 thisExp.addLoop(trials)  # add the loop to the experiment
 thisTrial = trials.trialList[0]  # so we can initialise stimuli with some values
@@ -1083,7 +1078,7 @@ for thisTrial in trials:
     
     # ------Prepare to start Routine "trial"-------
     continueRoutine = True
-    routineTimer.add(8.000000)
+    routineTimer.add(10.000000)
     # update component parameters for each repeat
     image.setImage(ImageFile)
     FamSlider.reset()
@@ -1123,7 +1118,7 @@ for thisTrial in trials:
             image.setAutoDraw(True)
         if image.status == STARTED:
             # is it time to stop? (based on global clock, using actual start)
-            if tThisFlipGlobal > image.tStartRefresh + 8-frameTolerance:
+            if tThisFlipGlobal > image.tStartRefresh + 10-frameTolerance:
                 # keep track of stop time/frame for later
                 image.tStop = t  # not accounting for scr refresh
                 image.frameNStop = frameN  # exact frame index
@@ -1140,7 +1135,7 @@ for thisTrial in trials:
             FamQ.setAutoDraw(True)
         if FamQ.status == STARTED:
             # is it time to stop? (based on global clock, using actual start)
-            if tThisFlipGlobal > FamQ.tStartRefresh + 8-frameTolerance:
+            if tThisFlipGlobal > FamQ.tStartRefresh + 10-frameTolerance:
                 # keep track of stop time/frame for later
                 FamQ.tStop = t  # not accounting for scr refresh
                 FamQ.frameNStop = frameN  # exact frame index
@@ -1157,7 +1152,7 @@ for thisTrial in trials:
             FamSlider.setAutoDraw(True)
         if FamSlider.status == STARTED:
             # is it time to stop? (based on global clock, using actual start)
-            if tThisFlipGlobal > FamSlider.tStartRefresh + 8-frameTolerance:
+            if tThisFlipGlobal > FamSlider.tStartRefresh + 10-frameTolerance:
                 # keep track of stop time/frame for later
                 FamSlider.tStop = t  # not accounting for scr refresh
                 FamSlider.frameNStop = frameN  # exact frame index
@@ -1174,7 +1169,7 @@ for thisTrial in trials:
             ComfQ.setAutoDraw(True)
         if ComfQ.status == STARTED:
             # is it time to stop? (based on global clock, using actual start)
-            if tThisFlipGlobal > ComfQ.tStartRefresh + 8-frameTolerance:
+            if tThisFlipGlobal > ComfQ.tStartRefresh + 10-frameTolerance:
                 # keep track of stop time/frame for later
                 ComfQ.tStop = t  # not accounting for scr refresh
                 ComfQ.frameNStop = frameN  # exact frame index
@@ -1191,7 +1186,7 @@ for thisTrial in trials:
             ComfSlider.setAutoDraw(True)
         if ComfSlider.status == STARTED:
             # is it time to stop? (based on global clock, using actual start)
-            if tThisFlipGlobal > ComfSlider.tStartRefresh + 8-frameTolerance:
+            if tThisFlipGlobal > ComfSlider.tStartRefresh + 10-frameTolerance:
                 # keep track of stop time/frame for later
                 ComfSlider.tStop = t  # not accounting for scr refresh
                 ComfSlider.frameNStop = frameN  # exact frame index
@@ -1208,7 +1203,7 @@ for thisTrial in trials:
             NosQ.setAutoDraw(True)
         if NosQ.status == STARTED:
             # is it time to stop? (based on global clock, using actual start)
-            if tThisFlipGlobal > NosQ.tStartRefresh + 8-frameTolerance:
+            if tThisFlipGlobal > NosQ.tStartRefresh + 10-frameTolerance:
                 # keep track of stop time/frame for later
                 NosQ.tStop = t  # not accounting for scr refresh
                 NosQ.frameNStop = frameN  # exact frame index
@@ -1225,7 +1220,7 @@ for thisTrial in trials:
             NosSlider.setAutoDraw(True)
         if NosSlider.status == STARTED:
             # is it time to stop? (based on global clock, using actual start)
-            if tThisFlipGlobal > NosSlider.tStartRefresh + 8-frameTolerance:
+            if tThisFlipGlobal > NosSlider.tStartRefresh + 10-frameTolerance:
                 # keep track of stop time/frame for later
                 NosSlider.tStop = t  # not accounting for scr refresh
                 NosSlider.frameNStop = frameN  # exact frame index
@@ -1280,6 +1275,7 @@ for thisTrial in trials:
 
 # ------Prepare to start Routine "hungerscale"-------
 continueRoutine = True
+
 # update component parameters for each repeat
 slider.reset()
 # keep track of which components have finished
@@ -1356,6 +1352,102 @@ thisExp.addData('slider.stopped', slider.tStopRefresh)
 thisExp.addData('text_4.started', text_4.tStartRefresh)
 thisExp.addData('text_4.stopped', text_4.tStopRefresh)
 # the Routine "hungerscale" was not non-slip safe, so reset the non-slip timer
+routineTimer.reset()
+
+# ------Prepare to start Routine "end"-------
+continueRoutine = True
+# update component parameters for each repeat
+key_resp_5.keys = []
+key_resp_5.rt = []
+_key_resp_5_allKeys = []
+# keep track of which components have finished
+endComponents = [text_6, key_resp_5]
+for thisComponent in endComponents:
+    thisComponent.tStart = None
+    thisComponent.tStop = None
+    thisComponent.tStartRefresh = None
+    thisComponent.tStopRefresh = None
+    if hasattr(thisComponent, 'status'):
+        thisComponent.status = NOT_STARTED
+# reset timers
+t = 0
+_timeToFirstFrame = win.getFutureFlipTime(clock="now")
+endClock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
+frameN = -1
+
+# -------Run Routine "end"-------
+while continueRoutine:
+    # get current time
+    t = endClock.getTime()
+    tThisFlip = win.getFutureFlipTime(clock=endClock)
+    tThisFlipGlobal = win.getFutureFlipTime(clock=None)
+    frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
+    # update/draw components on each frame
+    
+    # *text_6* updates
+    if text_6.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+        # keep track of start time/frame for later
+        text_6.frameNStart = frameN  # exact frame index
+        text_6.tStart = t  # local t and not account for scr refresh
+        text_6.tStartRefresh = tThisFlipGlobal  # on global time
+        win.timeOnFlip(text_6, 'tStartRefresh')  # time at next scr refresh
+        text_6.setAutoDraw(True)
+    
+    # *key_resp_5* updates
+    waitOnFlip = False
+    if key_resp_5.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+        # keep track of start time/frame for later
+        key_resp_5.frameNStart = frameN  # exact frame index
+        key_resp_5.tStart = t  # local t and not account for scr refresh
+        key_resp_5.tStartRefresh = tThisFlipGlobal  # on global time
+        win.timeOnFlip(key_resp_5, 'tStartRefresh')  # time at next scr refresh
+        key_resp_5.status = STARTED
+        # keyboard checking is just starting
+        waitOnFlip = True
+        win.callOnFlip(key_resp_5.clock.reset)  # t=0 on next screen flip
+        win.callOnFlip(key_resp_5.clearEvents, eventType='keyboard')  # clear events on next screen flip
+    if key_resp_5.status == STARTED and not waitOnFlip:
+        theseKeys = key_resp_5.getKeys(keyList=['space'], waitRelease=False)
+        _key_resp_5_allKeys.extend(theseKeys)
+        if len(_key_resp_5_allKeys):
+            key_resp_5.keys = _key_resp_5_allKeys[-1].name  # just the last key pressed
+            key_resp_5.rt = _key_resp_5_allKeys[-1].rt
+            # a response ends the routine
+            continueRoutine = False
+    
+    # check for quit (typically the Esc key)
+    if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
+        core.quit()
+    
+    # check if all components have finished
+    if not continueRoutine:  # a component has requested a forced-end of Routine
+        break
+    continueRoutine = False  # will revert to True if at least one component still running
+    for thisComponent in endComponents:
+        if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
+            continueRoutine = True
+            break  # at least one component has not yet finished
+    
+    # refresh the screen
+    if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
+        win.flip()
+
+# -------Ending Routine "end"-------
+for thisComponent in endComponents:
+    if hasattr(thisComponent, "setAutoDraw"):
+        thisComponent.setAutoDraw(False)
+thisExp.addData('text_6.started', text_6.tStartRefresh)
+thisExp.addData('text_6.stopped', text_6.tStopRefresh)
+# check responses
+if key_resp_5.keys in ['', [], None]:  # No response was made
+    key_resp_5.keys = None
+thisExp.addData('key_resp_5.keys',key_resp_5.keys)
+if key_resp_5.keys != None:  # we had a response
+    thisExp.addData('key_resp_5.rt', key_resp_5.rt)
+thisExp.addData('key_resp_5.started', key_resp_5.tStartRefresh)
+thisExp.addData('key_resp_5.stopped', key_resp_5.tStopRefresh)
+thisExp.nextEntry()
+# the Routine "end" was not non-slip safe, so reset the non-slip timer
 routineTimer.reset()
 
 # Flip one final time so any remaining win.callOnFlip() 
