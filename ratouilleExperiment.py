@@ -103,7 +103,7 @@ key_resp = keyboard.Keyboard()
 # Initialize components for Routine "Intro2"
 Intro2Clock = core.Clock()
 text_2 = visual.TextStim(win=win, name='text_2',
-    text='Rating the foods is time sensitive, so please be attentive to the screen. There will be a 15 second break every so often. \n\nTo answer the question, please click on the position on the slider that you would like to select.\n\n\nBefore we practice the task, we have 1 more question to ask you. Press [Space] to proceed.',
+    text='Rating the foods is time sensitive, so please be attentive to the screen. There will be a 15 second break every so often. \n\nTo answer the question, please use the mouse to click on the slider.\n\n\nBefore we practice the task, we have 1 more question to ask you. Press [Space] to proceed.',
     font='Open Sans',
     pos=(0, 0), height=0.035, wrapWidth=None, ori=0.0, 
     color='white', colorSpace='rgb', opacity=None, 
@@ -131,7 +131,7 @@ text_4 = visual.TextStim(win=win, name='text_4',
 # Initialize components for Routine "Intro3"
 Intro3Clock = core.Clock()
 text_5 = visual.TextStim(win=win, name='text_5',
-    text="Let's start the task now. Press [Space] to start.",
+    text="Let's practice the task now. Press [Space] to start.",
     font='Open Sans',
     pos=(0, 0), height=0.035, wrapWidth=None, ori=0.0, 
     color='white', colorSpace='rgb', opacity=None, 
@@ -195,7 +195,7 @@ NosSlider = visual.Slider(win=win, name='NosSlider',
 # Initialize components for Routine "Start"
 StartClock = core.Clock()
 text_3 = visual.TextStim(win=win, name='text_3',
-    text='Congratulations, you have completed the practice. \n\nTo begin the experiment, press [Space].',
+    text='You have finished the practice. \n\nTo begin the experiment, press [Space].',
     font='Open Sans',
     pos=(0, 0), height=0.035, wrapWidth=None, ori=0.0, 
     color='white', colorSpace='rgb', opacity=None, 
@@ -286,7 +286,7 @@ text_4 = visual.TextStim(win=win, name='text_4',
 # Initialize components for Routine "end"
 endClock = core.Clock()
 text_6 = visual.TextStim(win=win, name='text_6',
-    text='Thank you for participating in this experiment. You will receive your SONA credits soon.\n\nPress [Space] to exit.',
+    text='Thank you for participating in this experiment! You will receive your SONA credits within 48 hours.\n\nPress [Space] to exit.',
     font='Open Sans',
     pos=(0, 0), height=0.035, wrapWidth=None, ori=0.0, 
     color='white', colorSpace='rgb', opacity=None, 
@@ -989,7 +989,7 @@ routineTimer.reset()
 # set up handler to look after randomisation of conditions etc
 trials = data.TrialHandler(nReps=1.0, method='random', 
     extraInfo=expInfo, originPath=-1,
-    trialList=data.importConditions('C:\\Users\\ACLab\\Desktop\\Ratatouille Study\\imageList.xlsx', selection='0:5'),
+    trialList=data.importConditions('C:\\Users\\ACLab\\Desktop\\Ratatouille Study\\imageList.xlsx', selection='0:221'),
     seed=None, name='trials')
 thisExp.addLoop(trials)  # add the loop to the experiment
 thisTrial = trials.trialList[0]  # so we can initialise stimuli with some values
