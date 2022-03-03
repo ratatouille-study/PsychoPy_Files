@@ -117,7 +117,7 @@
         <Param name="flip" updates="constant" val="False" valType="bool"/>
         <Param name="font" updates="constant" val="Open Sans" valType="str"/>
         <Param name="forceEndRoutine" updates="constant" val="False" valType="bool"/>
-        <Param name="granularity" updates="constant" val="0" valType="num"/>
+        <Param name="granularity" updates="constant" val="1" valType="num"/>
         <Param name="initVal" updates="None" val="" valType="code"/>
         <Param name="labels" updates="constant" val="(&quot;Not at all&quot;, &quot;Extremely&quot;)" valType="list"/>
         <Param name="letterHeight" updates="constant" val="0.025" valType="num"/>
@@ -178,7 +178,7 @@
         <Param name="flip" updates="constant" val="False" valType="bool"/>
         <Param name="font" updates="constant" val="Open Sans" valType="str"/>
         <Param name="forceEndRoutine" updates="constant" val="False" valType="bool"/>
-        <Param name="granularity" updates="constant" val="0" valType="num"/>
+        <Param name="granularity" updates="constant" val="1" valType="num"/>
         <Param name="initVal" updates="None" val="" valType="code"/>
         <Param name="labels" updates="constant" val="(&quot;Not at all&quot;, &quot;Extremely&quot;)" valType="list"/>
         <Param name="letterHeight" updates="constant" val="0.025" valType="num"/>
@@ -239,7 +239,7 @@
         <Param name="flip" updates="constant" val="False" valType="bool"/>
         <Param name="font" updates="constant" val="Open Sans" valType="str"/>
         <Param name="forceEndRoutine" updates="constant" val="False" valType="bool"/>
-        <Param name="granularity" updates="constant" val="0" valType="num"/>
+        <Param name="granularity" updates="constant" val="1" valType="num"/>
         <Param name="initVal" updates="None" val="" valType="code"/>
         <Param name="labels" updates="constant" val="(&quot;Not at all&quot;, &quot;Extremely&quot;)" valType="list"/>
         <Param name="letterHeight" updates="constant" val="0.025" valType="num"/>
@@ -314,7 +314,7 @@
         <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
         <Param name="stopVal" updates="constant" val="" valType="code"/>
         <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
-        <Param name="text" updates="constant" val="Rating the foods is time sensitive, so please be attentive to the screen. There will be a 15 second break every so often. &amp;#10;&amp;#10;To answer the question, please click on the position on the slider that you would like to select.&amp;#10;&amp;#10;&amp;#10;Before we practice the task, we have 1 more question to ask you. Press [Space] to proceed." valType="str"/>
+        <Param name="text" updates="constant" val="Rating the foods is time sensitive, so please be attentive to the screen. There will be a 15 second break every so often. &amp;#10;&amp;#10;To answer the question, please use the mouse to click on the slider.&amp;#10;&amp;#10;&amp;#10;Before we practice the task, we have 1 more question to ask you. Press [Space] to proceed." valType="str"/>
         <Param name="units" updates="None" val="from exp settings" valType="str"/>
         <Param name="wrapWidth" updates="constant" val="" valType="num"/>
       </TextComponent>
@@ -359,7 +359,7 @@
         <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
         <Param name="stopVal" updates="constant" val="" valType="code"/>
         <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
-        <Param name="text" updates="constant" val="Welcome to The Ratatouille Moment. The purpose of this study is to explore the effect of foods on emotions and homeostasis.&amp;#10;&amp;#10;You will be rating each food image on a set of 3 questions on a scale of 1-7. The goal is to assess the emotional value of each food item for you. &amp;#10;&amp;#10;&amp;#10;Press [Space] to continue." valType="str"/>
+        <Param name="text" updates="constant" val="Welcome to The Ratatouille Moment. The purpose of this study is to explore the effect of foods on emotions and homeostasis.&amp;#10;&amp;#10;You will be rating each food image on a set of 3 questions. The goal is to assess the emotional value of each food item for you. &amp;#10;&amp;#10;&amp;#10;Press [Space] to continue." valType="str"/>
         <Param name="units" updates="None" val="from exp settings" valType="str"/>
         <Param name="wrapWidth" updates="constant" val="" valType="num"/>
       </TextComponent>
@@ -404,7 +404,7 @@
         <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
         <Param name="stopVal" updates="constant" val="" valType="code"/>
         <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
-        <Param name="text" updates="constant" val="Congratulations, you have completed the practice. &amp;#10;&amp;#10;To begin the experiment, press [Space]." valType="str"/>
+        <Param name="text" updates="constant" val="You have finished the practice. &amp;#10;&amp;#10;To begin the experiment, press [Space]." valType="str"/>
         <Param name="units" updates="None" val="from exp settings" valType="str"/>
         <Param name="wrapWidth" updates="constant" val="" valType="num"/>
       </TextComponent>
@@ -512,7 +512,7 @@
         <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
         <Param name="stopVal" updates="constant" val="" valType="code"/>
         <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
-        <Param name="text" updates="constant" val="Let's start the task now. Press [Space] to start." valType="str"/>
+        <Param name="text" updates="constant" val="Let's practice the task now. Press [Space] to start." valType="str"/>
         <Param name="units" updates="None" val="from exp settings" valType="str"/>
         <Param name="wrapWidth" updates="constant" val="" valType="num"/>
       </TextComponent>
@@ -557,7 +557,7 @@
         <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
         <Param name="stopVal" updates="constant" val="" valType="code"/>
         <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
-        <Param name="text" updates="constant" val="Congratulations on finishing the experiment. You will receive your SONA credits.&amp;#10;&amp;#10;Press [Space] to exit." valType="str"/>
+        <Param name="text" updates="constant" val="Thank you for participating in this experiment! You will reeive your SONA credits within 48 hours.&amp;#10;&amp;#10;Press [Space] to exit." valType="str"/>
         <Param name="units" updates="None" val="from exp settings" valType="str"/>
         <Param name="wrapWidth" updates="constant" val="" valType="num"/>
       </TextComponent>
@@ -589,7 +589,7 @@
         <Param name="durationEstim" updates="None" val="" valType="code"/>
         <Param name="flipHoriz" updates="constant" val="False" valType="bool"/>
         <Param name="flipVert" updates="constant" val="False" valType="bool"/>
-        <Param name="image" updates="set every repeat" val="$ImageFile" valType="file"/>
+        <Param name="image" updates="set every repeat" val="images\Demo\tamales.jpg" valType="file"/>
         <Param name="interpolate" updates="constant" val="linear" valType="str"/>
         <Param name="mask" updates="constant" val="" valType="str"/>
         <Param name="name" updates="None" val="image_2" valType="code"/>
@@ -634,11 +634,11 @@
         <Param name="flip" updates="constant" val="None" valType="str"/>
         <Param name="font" updates="constant" val="Open Sans" valType="str"/>
         <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
-        <Param name="letterHeight" updates="constant" val="0.1" valType="num"/>
+        <Param name="letterHeight" updates="constant" val="0.04" valType="num"/>
         <Param name="name" updates="None" val="text_7" valType="code"/>
         <Param name="opacity" updates="constant" val="" valType="num"/>
         <Param name="ori" updates="constant" val="0" valType="num"/>
-        <Param name="pos" updates="constant" val="(0, 0)" valType="list"/>
+        <Param name="pos" updates="constant" val="(0, -0.35)" valType="list"/>
         <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
@@ -684,19 +684,7 @@
     </LoopInitiator>
     <Routine name="Crosshair"/>
     <Routine name="trial"/>
-    <LoopInitiator loopType="TrialHandler" name="trials_3">
-      <Param name="Selected rows" updates="None" val="0:3" valType="str"/>
-      <Param name="conditions" updates="None" val="[{'ImageFile': 'images/Demo/paisa platter.jpg', 'ImageName': 'paisa platter.jpg', 'FoodType': 'DEMO'}, {'ImageFile': 'images/Demo/empanada.jpeg', 'ImageName': 'empanada.jpeg', 'FoodType': 'DEMO'}, {'ImageFile': 'images/Demo/tamales.jpg', 'ImageName': 'tamales.jpg', 'FoodType': 'DEMO'}, {'ImageFile': None, 'ImageName': None, 'FoodType': None}, {'ImageFile': None, 'ImageName': None, 'FoodType': None}]" valType="str"/>
-      <Param name="conditionsFile" updates="None" val="demoImageList.xlsx" valType="file"/>
-      <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
-      <Param name="isTrials" updates="None" val="True" valType="bool"/>
-      <Param name="loopType" updates="None" val="random" valType="str"/>
-      <Param name="nReps" updates="None" val="1" valType="num"/>
-      <Param name="name" updates="None" val="trials_3" valType="code"/>
-      <Param name="random seed" updates="None" val="" valType="code"/>
-    </LoopInitiator>
     <Routine name="attention"/>
-    <LoopTerminator name="trials_3"/>
     <LoopTerminator name="trials"/>
     <Routine name="hungerscale"/>
     <Routine name="end"/>
