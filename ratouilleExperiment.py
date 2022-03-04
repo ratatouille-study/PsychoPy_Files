@@ -274,7 +274,7 @@ key_resp_6 = keyboard.Keyboard()
 text_7 = visual.TextStim(win=win, name='text_7',
     text='Press [Space] if you saw the image',
     font='Open Sans',
-    pos=(0, -0.35), height=0.04, wrapWidth=None, ori=0.0, 
+    pos=(0, -0.35), height=0.065, wrapWidth=None, ori=0.0, 
     color='white', colorSpace='rgb', opacity=None, 
     languageStyle='LTR',
     depth=-2.0);
@@ -683,7 +683,7 @@ routineTimer.reset()
 # set up handler to look after randomisation of conditions etc
 demo_trials = data.TrialHandler(nReps=1.0, method='random', 
     extraInfo=expInfo, originPath=-1,
-    trialList=data.importConditions('demoImageList.xlsx', selection='0:3'),
+    trialList=data.importConditions('demoImageList.xlsx', selection='0:1'),
     seed=None, name='demo_trials')
 thisExp.addLoop(demo_trials)  # add the loop to the experiment
 thisDemo_trial = demo_trials.trialList[0]  # so we can initialise stimuli with some values
@@ -1019,7 +1019,7 @@ for thisTrial in trials:
     
     # ------Prepare to start Routine "Crosshair"-------
     continueRoutine = False
-    if trials.thisTrialN % 5 == 0 and trials.thisTrialN > 0:
+    if trials.thisTrialN % 50 == 0 and trials.thisTrialN > 0:
         continueRoutine = True
     routineTimer.add(15.000000)
     
@@ -1284,11 +1284,14 @@ for thisTrial in trials:
     
     # ------Prepare to start Routine "attention"-------
     continueRoutine = False
-    if trials.thisTrialN % 10 == 0 and trials.thisTrialN > 0:
+    if trials.thisTrialN % 2 == 0 and trials.thisTrialN > 0:
         continueRoutine = True
     routineTimer.add(2.000000)
+    
+    #Set Image in random order
+    imgs = ['C://Experiment//images//Attention//beets','C://Experiment//images//Attention//carrots','C://Experiment//images//Attention//cauliflower']
     # update component parameters for each repeat
-    image_2.setImage('images/Demo/tamales.jpg')
+    image_2.setImage(imgs[0])
     key_resp_6.keys = []
     key_resp_6.rt = []
     _key_resp_6_allKeys = []
@@ -1396,7 +1399,6 @@ for thisTrial in trials:
         # refresh the screen
         if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
             win.flip()
-    
     # -------Ending Routine "attention"-------
     for thisComponent in attentionComponents:
         if hasattr(thisComponent, "setAutoDraw"):
