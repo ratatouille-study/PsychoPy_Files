@@ -683,7 +683,7 @@ routineTimer.reset()
 # set up handler to look after randomisation of conditions etc
 demo_trials = data.TrialHandler(nReps=1.0, method='random', 
     extraInfo=expInfo, originPath=-1,
-    trialList=data.importConditions('demoImageList.xlsx', selection='0:1'),
+    trialList=data.importConditions('demoImageList.xlsx', selection='0:3'),
     seed=None, name='demo_trials')
 thisExp.addLoop(demo_trials)  # add the loop to the experiment
 thisDemo_trial = demo_trials.trialList[0]  # so we can initialise stimuli with some values
@@ -1010,6 +1010,7 @@ if thisTrial != None:
     for paramName in thisTrial:
         exec('{} = thisTrial[paramName]'.format(paramName))
 
+count = 0
 for thisTrial in trials:
     currentLoop = trials
     # abbreviate parameter names if possible (e.g. rgb = thisTrial.rgb)
@@ -1019,7 +1020,7 @@ for thisTrial in trials:
     
     # ------Prepare to start Routine "Crosshair"-------
     continueRoutine = False
-    if trials.thisTrialN % 50 == 0 and trials.thisTrialN > 0:
+    if trials.thisTrialN % 20 == 0 and trials.thisTrialN > 0:
         continueRoutine = True
     routineTimer.add(15.000000)
     
@@ -1284,14 +1285,14 @@ for thisTrial in trials:
     
     # ------Prepare to start Routine "attention"-------
     continueRoutine = False
-    if trials.thisTrialN % 2 == 0 and trials.thisTrialN > 0:
+    if trials.thisTrialN % 73 == 0 and trials.thisTrialN > 0:
         continueRoutine = True
     routineTimer.add(2.000000)
     
     #Set Image in random order
-    imgs = ['C://Experiment//images//Attention//beets','C://Experiment//images//Attention//carrots','C://Experiment//images//Attention//cauliflower']
+    imgs = ['C://Experiment//images//Attention//beets.jpg','C://Experiment//images//Attention//carrots.jpg','C://Experiment//images//Attention//cauliflower.jpg']
     # update component parameters for each repeat
-    image_2.setImage(imgs[0])
+    image_2.setImage(imgs[count])
     key_resp_6.keys = []
     key_resp_6.rt = []
     _key_resp_6_allKeys = []
@@ -1400,6 +1401,11 @@ for thisTrial in trials:
         if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
             win.flip()
     # -------Ending Routine "attention"-------
+    if count >= 3:
+        count = 0
+    if trials.thisTrialN % 73 == 0 and trials.thisTrialN > 73:
+        count += 1
+
     for thisComponent in attentionComponents:
         if hasattr(thisComponent, "setAutoDraw"):
             thisComponent.setAutoDraw(False)
