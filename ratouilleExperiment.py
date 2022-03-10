@@ -51,7 +51,7 @@ filename = _thisDir + os.sep + u'data/%s_%s_%s' % (expInfo['participant'], expNa
 # An ExperimentHandler isn't essential but helps with data saving
 thisExp = data.ExperimentHandler(name=expName, version='',
     extraInfo=expInfo, runtimeInfo=None,
-    originPath='C:\\Experiment\\ratouilleExperiment.py',
+    originPath='C:\\Users\\ACLab\\Desktop\\Ratatouille Study\\ratouilleExperiment.py',
     savePickle=True, saveWideText=True,
     dataFileName=filename)
 # save a log file for detail verbose info
@@ -65,7 +65,7 @@ frameTolerance = 0.001  # how close to onset before 'same' frame
 
 # Setup the Window
 win = visual.Window(
-    size=[1920, 1080], fullscr=False, screen=0, 
+    size=[1920, 1080], fullscr=True, screen=0, 
     winType='pyglet', allowGUI=False, allowStencil=False,
     monitor='testMonitor', color=(-1.0000, -1.0000, -1.0000), colorSpace='rgb',
     blendMode='avg', useFBO=True, 
@@ -86,7 +86,7 @@ defaultKeyboard = keyboard.Keyboard()
 # Initialize components for Routine "Intro1"
 Intro1Clock = core.Clock()
 intro_1 = visual.TextStim(win=win, name='intro_1',
-    text='Welcome to The Ratatouille Moment. The purpose of this study is to explore the effect of foods on emotions and homeostasis.\n\nYou will be rating each food image on a set of 3 questions. The goal is to assess the emotional value of each food item for you. \n\n\nPress [Space] to continue.',
+    text='Welcome to The Ratatouille Moment. The purpose of this study is to explore the relationship between food and emotions.\n\nYou will be rating each food image on a set of 3 questions. The goal is to assess the emotional value of each food item for you. \n\n\nPress [Space] to continue.',
     font='Open Sans',
     pos=(0, 0), height=0.035, wrapWidth=None, ori=0.0, 
     color='white', colorSpace='rgb', opacity=None, 
@@ -299,7 +299,7 @@ text_4 = visual.TextStim(win=win, name='text_4',
 # Initialize components for Routine "end"
 endClock = core.Clock()
 text_6 = visual.TextStim(win=win, name='text_6',
-    text='Thank you for participating in this experiment! You will reeive your SONA credits within 48 hours.\n\nPress [Space] to exit.',
+    text='Thank you for participating in this experiment! You will receive your SONA credits within 48 hours.\n\nPress [Space] to exit.',
     font='Open Sans',
     pos=(0, 0), height=0.1, wrapWidth=None, ori=0.0, 
     color='white', colorSpace='rgb', opacity=None, 
@@ -1001,7 +1001,7 @@ routineTimer.reset()
 # set up handler to look after randomisation of conditions etc
 trials = data.TrialHandler(nReps=1.0, method='random', 
     extraInfo=expInfo, originPath=-1,
-    trialList=data.importConditions('C:/Experiment/imageList.xlsx', selection='0:222'),
+    trialList=data.importConditions('C:\\Users\\ACLab\\Desktop\\Ratatouille Study\\imageList.xlsx', selection='0:222'),
     seed=None, name='trials')
 thisExp.addLoop(trials)  # add the loop to the experiment
 thisTrial = trials.trialList[0]  # so we can initialise stimuli with some values
@@ -1290,7 +1290,7 @@ for thisTrial in trials:
     routineTimer.add(2.000000)
     
     #Set Image in random order
-    imgs = ['C://Experiment//images//Attention//beets.jpg','C://Experiment//images//Attention//carrots.jpg','C://Experiment//images//Attention//cauliflower.jpg']
+    imgs = ['C:\\Users\\ACLab\\Desktop\\Ratatouille Study\\images\\Attention\\beets.jpg','C:\\Users\\ACLab\\Desktop\\Ratatouille Study\\images\\Attention\\carrots.jpg','C:\\Users\\ACLab\\Desktop\\Ratatouille Study\\images\\Attention\\cauliflower.jpg']
     # update component parameters for each repeat
     image_2.setImage(imgs[count])
     key_resp_6.keys = []
