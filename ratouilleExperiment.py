@@ -51,7 +51,7 @@ filename = _thisDir + os.sep + u'data/%s_%s_%s' % (expInfo['participant'], expNa
 # An ExperimentHandler isn't essential but helps with data saving
 thisExp = data.ExperimentHandler(name=expName, version='',
     extraInfo=expInfo, runtimeInfo=None,
-    originPath='C:\\Experiment\\ratouilleExperiment.py',
+    originPath='C:\\Users\\ACLab\\Desktop\\Ratatouille Study\\ratouilleExperiment.py',
     savePickle=True, saveWideText=True,
     dataFileName=filename)
 # save a log file for detail verbose info
@@ -65,7 +65,7 @@ frameTolerance = 0.001  # how close to onset before 'same' frame
 
 # Setup the Window
 win = visual.Window(
-    size=[1820, 980], fullscr=False, screen=0, 
+    size=[1820, 980], fullscr=True, screen=0, 
     winType='pyglet', allowGUI=False, allowStencil=False,
     monitor='testMonitor', color=(-1.0000, -1.0000, -1.0000), colorSpace='rgb',
     blendMode='avg', useFBO=True, 
@@ -1108,7 +1108,7 @@ routineTimer.reset()
 # set up handler to look after randomisation of conditions etc
 trials = data.TrialHandler(nReps=1.0, method='random', 
     extraInfo=expInfo, originPath=-1,
-    trialList=data.importConditions('C:/Experiment/imageList.xlsx', selection='0:228'),
+    trialList=data.importConditions('C:\\Users\\ACLab\\Desktop\\Ratatouille Study\\imageList.xlsx', selection='0:228'),
     seed=None, name='trials')
 thisExp.addLoop(trials)  # add the loop to the experiment
 thisTrial = trials.trialList[0]  # so we can initialise stimuli with some values
@@ -1396,7 +1396,7 @@ for thisTrial in trials:
     routineTimer.add(2.500000)
     
     #Set Image in random order
-    imgs = ['C://Experiment//images//Attention//beets.jpg','C://Experiment//images//Attention//carrots.jpg','C://Experiment//images//Attention//cauliflower.jpg']
+    imgs = ['C:\\Users\\ACLab\\Desktop\\Ratatouille Study\\images\\Attention\\beets.jpg','C:\\Users\\ACLab\\Desktop\\Ratatouille Study\\images\\Attention\\carrots.jpg','C:\\Users\\ACLab\\Desktop\\Ratatouille Study\\images\\Attention\\cauliflower.jpg']
     # update component parameters for each repeat
     image_2.setImage(imgs[count])
     key_resp_6.keys = []
